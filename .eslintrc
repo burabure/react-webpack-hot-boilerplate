@@ -1,0 +1,28 @@
+{
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+        "blockBindings": true,
+        "forOf": true,
+        "arrowFunctions": true,
+        "jsx": true,
+        "modules": true,
+        "classes": true
+    },
+    "extends": "airbnb",
+    "rules": {
+        "indent": [2, 2],
+        "comma-dangle" : [0],
+        "func-names": [0],
+        "key-spacing": [2, { "align": "colon" }],
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "amd": true,
+        "mocha": true
+    },
+    "plugins": [
+      "react"
+    ]
+}
