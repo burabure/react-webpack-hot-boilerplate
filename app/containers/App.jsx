@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-export const NICE = 'pink';
-export const SUPER_NICE = 'darkred';
+export const NICE = 'blue';
+export const SUPER_NICE = 'purple';
 
 class Counter extends Component {
   constructor(props) {
@@ -24,16 +24,19 @@ class Counter extends Component {
     return (
       <h1 style={{ color: this.props.color }}>
         Counter ({this.props.increment}): {this.state.counter}
+        <br/>
+        state: {JSON.stringify(this.state)}
       </h1>
     );
   }
 }
-
-export const App = () => {
+export class App extends Component {
+  render(){
   return (
     <div>
       <Counter increment={1} color={NICE} />
       <Counter increment={5} color={SUPER_NICE} />
     </div>
   );
-};
+}
+}
